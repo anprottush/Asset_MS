@@ -1,0 +1,91 @@
+body
+{
+  font-family: sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type="email"],input[type="date"],select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.radio
+{
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+h3
+{
+  text-align: center;
+}
+
+/* Set a style for all buttons */
+.button {
+  background-color: #497FAF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  width: 43%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+input:hover,.radio:hover
+{
+  border: 1px solid black;
+}
+p{
+  text-align: center;
+  font-size: 15px;
+  color: red;
+}
+
+/* The Modal (background) */
+.main
+{
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: #888; /* Fallback color */
+}
+
+/* Modal Content/Box */
+.main-content {
+  width: 75%;
+  max-width: 350px;
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  border: 1px solid #888;
+  background-color: #fefefe;
+}
+
+/* .hyperlink #link
+{
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.hyperlink #link:hover
+{
+  border: 1px solid black;
+} */
