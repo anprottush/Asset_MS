@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const httpError = require("http-errors");
 const bodyParser = require("body-parser");
+const cookieParser = require('cookie-parser');
 const app = express();
 const cors = require("cors");
 const { errorResponse } = require("./controllers/responseController");
@@ -11,10 +12,12 @@ const categoryRouter = require("./routes/categoryRoute");
 const assetRouter = require("./routes/assetRoute");
 const authRouter = require("./routes/authRoute");
 
+app.use(cookieParser());
 // app.use(express.static());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+
 // app.use(morgan('dev'));
 
 app.use("/api/user", userRouter);
