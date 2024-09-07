@@ -18,19 +18,19 @@ const login = async (req, res, next) => {
 
     if (!user) {
       throw createHttpError(404, "User does not exist. Please register first");
-    } else {
+    } 
       const isPasswordMatch = await bcrypt.compare(password, user.password);
 
       if (!isPasswordMatch) {
-        throw createHttpError(401, "Email and password does not match");
+        throw createHttpError(401, "Email and password does not match. Invalid credentials");
       }
 
       const token = generateToken({ email });
 
-      res.cookie('access_token', token, {
+      res.cookie('authToken', token, {
         maxAge: 15 * 60 * 1000, //15 minutes
         httpOnly: true,
-        secure: true,
+        secure: false,
         sameSite: "none",
       });
 
@@ -41,7 +41,7 @@ const login = async (req, res, next) => {
           token: token,
         },
       });
-    }
+    
   } catch (error) {
     next(error);
   }
