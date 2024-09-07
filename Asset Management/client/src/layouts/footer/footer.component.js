@@ -4,7 +4,7 @@ const Footer = () => {
     <footer class="footer">
       <div class="container-fluid">
         <div class="footer-in">
-          <p class="mb-0">&copy 2020 Vishweb design - All Rights Reserved.</p>
+          <p class="mb-0">&copy; 2024 Asset Software - All Rights Reserved.</p>
           
         </div>
       </div>

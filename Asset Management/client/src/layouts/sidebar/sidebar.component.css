@@ -117,7 +117,7 @@ a:focus {
   left: 0;
   bottom: 0;
   z-index: 11;
-  width: 260px;
+  width: 220px;
   overflow: auto;
   transition: all 0.3s;
   background-color: #fff;
@@ -126,7 +126,7 @@ a:focus {
 
 @media only screen and (min-width: 992px) {
   .sidebar.active {
-    left: -260px;
+    left: -220px;
     height: 100% !important;
     position: absolute !important;
     overflow: visible !important;
@@ -189,7 +189,7 @@ a:focus {
 }
 
 .sidebar-header h3 img {
-  width: 80px;
+  width: 100px;
   margin-right: 10px;
 }
 
